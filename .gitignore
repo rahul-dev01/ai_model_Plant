@@ -1,0 +1,24 @@
+# Virtual environments
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# System and IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Model files (optional if >100MB)
+*.h5
+*.ckpt
+*.pb
+
+# Logs
+*.log
+git add .
+git commit -m "Clean version without env or venv"
