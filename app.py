@@ -13,10 +13,6 @@ CORS(app)
 model = load_model('plant_disease_model.h5')
 CLASS_NAMES = ['Tomato-Bacterial_spot', 'Potato-Barly blight', 'Corn-Common_rust']
 
-@app.route('/')
-def upload_page():
-    return render_template('upload.html') 
-
 @app.route('/detection/upload/', methods=['POST'])
 def predict():
     file = request.files['image']
